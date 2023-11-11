@@ -1,0 +1,123 @@
+#jeux{
+  width: 100%;
+  height: 100%;
+}
+
+#jeux #game_on{
+  text-align: center;
+  color: white;
+}
+#jeux #game_on.hide{
+  display: none;
+}
+
+
+#jeux .choix {
+  /*position: absolute;*/
+  background: #25262A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vmin;
+  margin: auto;
+}
+
+#jeux .choix input[type="radio"]{
+    cursor: pointer;
+}
+#jeux .choix form label{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#jeux .choix h2{
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px red;
+}
+#jeux .choix.hide{
+    display: none;
+}
+
+#jeux .wrapper.hide{
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 1s; 
+}
+#jeux .wrapper.hide.dip{
+    display: none;
+}
+
+
+#jeux .wrapper{
+  background: #25262A;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+#jeux .cont {
+  margin:auto;
+  padding-top: 5vmin;
+  width: 50vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vmin;
+}
+
+#jeux .button-option {
+  background: #ffffff;
+  height: 6vmin;
+  width: 6vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 3vmin;
+  color: #337b36;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(33.33% - 2vmin);
+}
+#jeux #restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #0a0027;
+  color: #ffffff;
+  margin: 1em auto;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#jeux .popup {
+  background: #25262A;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3em;
+}
+
+#jeux #new-game {
+  cursor: pointer;
+  font-size: 0.6em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+  margin: 1em auto;
+  padding: 1em;
+
+}
+#jeux #message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+}
+#jeux .popup.hide {
+  display: none;
+}
